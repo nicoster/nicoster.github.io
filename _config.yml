@@ -6,22 +6,21 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Awesome Site Title
-email: your-email@domain.com
+title: Make Everyday Count
+email: nickxiao@me.com
 description: >
-  Awesome site description here
+  人如果没有梦想, 那和咸鱼有什么分别
 logo: "/assets/images/logo.jpg"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-paginate:	5 # The number of posts to show per page on your homepage
+url: "https://nicoster.github.io" # the base hostname & protocol for your site
+paginate:	10 # The number of posts to show per page on your homepage
 
-name: 'Your Name'
+name: 'Nick Xiao'
 bio: >
-  Mea suas vituperatoribus et, virtute corpora quaestio cum ut.
-  Ne solet nostrum complectitur pri, vis ut inani populo.
+  2007 加入 Cisco, 一直致力于协作平台的客户端研发, 作为 Technical Leader 负责平台架构设计. 熟悉 XMPP 协议. 对 C/C++, x86/arm 汇编, windbg, Windows Troubleshooting 等有深入研究. 2014 转向协作平台后端的研发. 主导系统整体架构设计. 对系统 Troubleshooting, Erlang, Ejabberd, Nginx, Lua, Redis 以及 分布式系统, 高并发, 性能调优都有深入的研究和丰富的实战经验. 善于使用脚本编写各种工具避免重复劳动, 提高自己和团队日常工作效率.
 author_image: "/assets/images/author.jpg"
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: nicoster
+github_username:  nicoster
 
 # Google Analytics
 analytics_id: ""

@@ -27,7 +27,7 @@ amp-img {
 
 $rs: 16px;
 
-$font-serif: Georgia,Cambria,"Times New Roman",Times,'Lora', serif;
+$font-serif: "Helvetica Neue", Georgia,Cambria,"Times New Roman",Times,'Lora', serif;
 $font-sans: "Helvetica Neue", 'Open Sans', Arial, Helvetica, sans-serif;
 
 @mixin respond-to($breakpoint) {
@@ -76,7 +76,7 @@ body {
       right: $rs;
       font-weight: 200;
       font-style: normal;
-      font-size: 18px;
+      font-size: 16px;
       line-height: 30px;
 
       a {
@@ -100,7 +100,7 @@ body {
 
   .blog-title {
     margin-bottom: 8px;
-    font-size: 50px;
+    font-size: 48px;
     font-weight: 700;
     letter-spacing: -2px;
     outline: 0;
@@ -109,7 +109,7 @@ body {
     color: #333333;
   }
   .blog-description {
-    font-size: 28px;
+    font-size: 22px;
     margin: 0 0 20px;
     padding: 0;
     line-height: 1.2;
@@ -138,7 +138,7 @@ body {
       font-weight: 700;
       font-style: normal;
       display: block;
-      font-size: 36px;
+      font-size: 32px;
       line-height: 1.15;
       margin: 0 0;
       a {
@@ -153,7 +153,7 @@ body {
       letter-spacing: -0.02em;
       font-weight: 300;
       font-style: normal;
-      font-size: 20px;
+      font-size: 18px;
       line-height: 1.59;
       color: #666665;
     }
@@ -297,7 +297,7 @@ body {
     p {
       font-weight: 400;
       font-style: normal;
-      font-size: 22px;
+      font-size: 16px;
       line-height: 1.59;
       letter-spacing: -.002em;
       margin-top: 30px;
