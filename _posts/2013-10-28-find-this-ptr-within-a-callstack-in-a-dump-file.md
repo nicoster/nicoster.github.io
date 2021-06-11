@@ -19,24 +19,26 @@ When you're inspecting a dump file using Windbg, you may want to know the states
 Before we go any further, let's take a brief look of C++ ABI.
 In the Microsoft implementation of x86 C++ ABI, usually register ECX serves as the 'this' ptr. So the following C++ code will be translated to something like:
 
-C++:
+```cpp
+foo = get_foo();
+foo.test()
+```
 
-	Foo: foo = get_foo();
-	foo.test()
-
-ASM:
-
-	lea ecx, [ebp-10h]     ; load the address of foo
-	call Foo::test
+```x86asm
+lea ecx, [ebp-10h]     ; load the address of foo
+call Foo::test
+```
 	
 inside Foo::test(), when it in turn calls another function Bar::test2:
 
-	Foo::test(){
-	     Bar&#038; bar = get_bar();
-	     bar.test2();
-	     ...
-	}
-	
+```cpp
+Foo::test(){
+		Bar bar = get_bar();
+		bar.test2();
+		...
+}
+```
+
 ecx will be loaded with the address of bar and then make the call. As the 'this' ptr to foo will still be used later on, it's necessary to save ecx before loading bar.
 The assembly code might be:
 
